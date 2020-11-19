@@ -29,7 +29,7 @@ public class OffersManager {
     public Offers[] findTickets(String from, String to){
         Offers[] offers = repository.getAll();
         int index = 0;
-        Offers[] tmp = new Offers[offers.length]; //длина массива?
+        Offers[] tmp = new Offers[offers.length]; //длина массива ?
         for (Offers offer : offers) {
             if (offer.getArrivalAirport().equals(from)) {
                 if (offer.getDepartureAirport().equals(to)){
